@@ -1,0 +1,46 @@
+{
+    "id": "com.mattermost.mattermost-plugin-outline",
+    "name": "Outline",
+    "description": "Mattermost outline plugin allows you to search your teams documents.",
+    "homepage_url": "https://github.com/Lujeni/mattermost-plugin-outline",
+    "support_url": "https://github.com/Lujeni/mattermost-plugin-outline/issues",
+    "release_notes_url": "https://github.com/Lujeni/mattermost-plugin-outline/releases/tag/v0.1.0",
+    "icon_path": "assets/mattermost-outline.svg",
+    "version": "0.1.1",
+    "min_server_version": "5.12.0",
+    "server": {
+        "executables": {
+            "linux-amd64": "server/dist/plugin-linux-amd64",
+            "darwin-amd64": "server/dist/plugin-darwin-amd64",
+            "darwin-arm64": "server/dist/plugin-darwin-arm64",
+            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        }
+    },
+    "settings_schema": {
+        "header": "To set up the Outline plugin, you need Outline token [check here](https://www.getoutline.com/developers#section/Authentication).",
+        "settings": [
+            {
+                "key": "OutlineURL",
+                "display_name": "Your Outline server address",
+                "type": "text",
+                "placeholder": "https://app.getoutline.com",
+                "help_text": "https://app.getoutline.com"
+            },
+            {
+                "key": "OutlineToken",
+                "display_name": "Outline Token",
+                "type": "text",
+                "placeholder": "eyJrIjoiabUdzREMwcDEiLCJuIjoiZnlpIiwiaWQiOjF9",
+                "help_text": "The valid Outline API key."
+            },
+            {
+                "key": "PageNotFoundURL",
+                "display_name": "URL when no results",
+                "type": "text",
+                "placeholder": "https://media.giphy.com/media/UHAYP0FxJOmFBuOiC2/giphy.gif",
+                "help_text": "Your best 404 URL."
+            }
+        ],
+        "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/Lujeni/mattermost-plugin-outline)."
+    }
+}
