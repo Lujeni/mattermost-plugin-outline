@@ -1,6 +1,8 @@
 ### mattermost-plugin-outline
 Mattermost **[Outline](https://www.getoutline.com/)** plugin allows you to search your teams documents.
 
+![mattermost](https://raw.githubusercontent.com/Lujeni/mattermost-plugin-outline/main/assets/mattermost.png)
+
 ## Installation
 In Mattermost 5.16 and later, this plugin is included in the Plugin Marketplace which can be accessed from **Main Menu > Plugins Marketplace**. You can install the plugin and then configure it via the [Plugin Marketplace "Configure" button](#configuration).
 
