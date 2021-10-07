@@ -4,9 +4,9 @@
     "description": "Mattermost outline plugin allows you to search your teams documents.",
     "homepage_url": "https://github.com/Lujeni/mattermost-plugin-outline",
     "support_url": "https://github.com/Lujeni/mattermost-plugin-outline/issues",
-    "release_notes_url": "https://github.com/Lujeni/mattermost-plugin-outline/releases/tag/v0.1.0",
+    "release_notes_url": "https://github.com/Lujeni/mattermost-plugin-outline/releases/tag/v0.1.2",
     "icon_path": "assets/mattermost-outline.svg",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "min_server_version": "5.12.0",
     "server": {
         "executables": {
@@ -39,6 +39,13 @@
                 "type": "text",
                 "placeholder": "https://media.giphy.com/media/UHAYP0FxJOmFBuOiC2/giphy.gif",
                 "help_text": "Your best 404 URL."
+            },
+            {
+                "key": "Trigger",
+                "display_name": "Name of the trigger command",
+                "type": "text",
+                "placeholder": "outline",
+                "help_text": "outline"
             }
         ],
         "footer": "To report an issue, make a suggestion or a contribution, [check the repository](https://github.com/Lujeni/mattermost-plugin-outline)."

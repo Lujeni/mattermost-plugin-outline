@@ -101,13 +101,14 @@ func DocumentsSearch(c *configuration, query string) string {
 
 func (p *Plugin) getCommand() (*model.Command, error) {
 	iconData, err := command.GetIconData(p.API, "assets/mattermost-outline.svg")
+	config := p.getConfiguration()
 
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to get icon data")
 	}
 
 	return &model.Command{
-		Trigger:              "outline",
+		Trigger:              config.Trigger,
 		DisplayName:          "Mattermost Outline",
 		Description:          "Mattermost outline plugin allow you to search your teams documents.",
 		AutoComplete:         true,
@@ -139,7 +140,7 @@ func (p *Plugin) ExecuteCommand(c *plugin.Context, args *model.CommandArgs) (*mo
 	if len(split) > 2 {
 		parameters = split[2:]
 	}
-	if command != "/outline" {
+	if command != fmt.Sprintf("/%v", config.Trigger) {
 		return &model.CommandResponse{}, nil
 	}
 

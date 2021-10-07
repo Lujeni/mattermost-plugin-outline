@@ -22,6 +22,7 @@ type configuration struct {
 	OutlineURL      string
 	OutlineToken    string
 	PageNotFoundURL string
+	Trigger         string
 }
 
 // Clone shallow copies the configuration. Your implementation may require a deep copy if
