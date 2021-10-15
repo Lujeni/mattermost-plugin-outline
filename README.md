@@ -18,9 +18,8 @@ In Mattermost 5.13 and earlier, follow these steps:
 ### Step 2: Configure plugin in Mattermost
 
 1. Go to **System Console > Plugins > Outline** and fill the form
-3. Go to **Plugins Marketplace > Outline > Configure > Enable Plugin** and click **Enable** to enable the Outline plugin.
 
-## Developping
+## Development
 This plugin contains only a server portion (no web app).
 
 Use make to build distributions of the plugin that you can upload to a Mattermost server.

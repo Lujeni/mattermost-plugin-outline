@@ -110,7 +110,7 @@ func (p *Plugin) getCommand() (*model.Command, error) {
 	return &model.Command{
 		Trigger:              config.Trigger,
 		DisplayName:          "Mattermost Outline",
-		Description:          "Mattermost outline plugin allow you to search your teams documents.",
+		Description:          "Mattermost Outline plugin allow you to search your teams documents.",
 		AutoComplete:         true,
 		AutoCompleteDesc:     "Available commands: help, search",
 		AutoCompleteHint:     "[command]",

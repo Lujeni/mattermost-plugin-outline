@@ -25,7 +25,7 @@ func (p *Plugin) OnActivate() error {
 	config := p.getConfiguration()
 
 	if err := config.IsValid(); err != nil {
-		return err
+		return errors.Wrap(err, "plugin config is invalid")
 	}
 
 	command, err := p.getCommand()
@@ -34,7 +34,7 @@ func (p *Plugin) OnActivate() error {
 	}
 
 	if err := p.API.RegisterCommand(command); err != nil {
-		return errors.Wrap(err, fmt.Sprintf("Unable to register command: %v", err))
+		return errors.Wrap(err, "unable to register command")
 	}
 
 	return nil

@@ -35,7 +35,7 @@ func (c *configuration) Clone() *configuration {
 // IsValid checks if all needed fields are set
 func (c *configuration) IsValid() error {
 	if c.OutlineURL == "" {
-		return fmt.Errorf("must have outline url")
+		return fmt.Errorf("must have Outline url")
 	}
 
 	if c.OutlineToken == "" {
